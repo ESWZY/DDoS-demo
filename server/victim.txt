@@ -1,1 +1,1 @@
-{"host": "example.com","port": "80","needed": "YES"}
+{"host": "example.com","port": "80","state": "go"}
