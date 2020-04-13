@@ -1,6 +1,8 @@
 import requests
 import json
+import sys
 
+sys.path.append(sys.path[0].replace("client", ""))
 from config import server_address, server_port
 
 
@@ -17,5 +19,3 @@ class API:
     # What the server wants the client do. work? sleep?
     def get_state(self):
         return self._data["state"]
-
-

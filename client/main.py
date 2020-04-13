@@ -1,4 +1,7 @@
 import time
+import sys
+
+sys.path.append(sys.path[0].replace("client", ""))
 from client.api import API
 from client.dos import DoSInitiator
 

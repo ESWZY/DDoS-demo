@@ -1,5 +1,8 @@
 from flask import Flask, jsonify
 import json
+import sys
+
+sys.path.append(sys.path[0].replace("server", ""))
 from config import server_port
 
 app = Flask(__name__)
