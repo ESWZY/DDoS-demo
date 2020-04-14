@@ -12,8 +12,8 @@ Bots poll the server's state and do actions.
 
 ```shell script
 git clone https://github.com/ESWZY/DDoS-demo.git
-cd DDos-demo
-pip -r requirements.txt
+cd DDoS-demo
+pip install -r requirements.txt
 cd server
 python server.py
 ```
