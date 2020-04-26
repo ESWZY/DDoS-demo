@@ -6,7 +6,7 @@ A demo of C/S model botnet structure and SYN attack.
 
 The Flask API server is attacker, the client python program is bot.
 
-Bots poll the server's state and do actions. 
+Server initiates attacking packets, and bots poll the server's state and act.
 
 # Quick Start
 
